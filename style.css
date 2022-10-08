@@ -1,0 +1,45 @@
+
+ *{
+    padding:0;
+    margin:0;
+   background-color: rgb(56, 48, 48);
+   
+}
+#game{
+    
+    width: 600px;
+    height: 200px;
+    border: 2px solid rgb(255, 254, 254);
+    margin:0% auto;
+
+}
+#character{
+    width: 20px;
+    height:50px;
+    background-color: red;
+    position:relative;
+    top:150px;
+   
+}
+#enemy{
+    width: 20px;
+    height:20px;
+    background-color:red;
+    position:relative;
+    top: 130px;
+    left: 580px;
+    animation: enemy 1s infinite linear;
+}
+@keyframes enemy{
+    0%{left:580px;}
+    100%{left:-40px;}
+}
+@keyframes jump{
+    0%{top:150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top:150px;}
+}
+.animate{
+    animation: jump 500ms linear;
+}
